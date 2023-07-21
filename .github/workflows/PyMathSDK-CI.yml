@@ -76,11 +76,17 @@ jobs:
           github-token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
           script: |
             try {
-              const tags_url = context.payload.repository.tags_url + "?per_page=1"
-              const result = await github.request(tags_url)
-              const current_tag = result.data[0].name
+              const tags_url = context.payload.repository.tags_url + "?per_page=1";
+              const result = await github.request(tags_url);
+              const current_tag = result.data[0].name;
               
-              await github.rest.repos.createRelease({
+              const releases_url = context.payload.repository.releases_url.replace("{/id}", `/tags/${current_tag}`);
+              const existingRelease = await github.request(releases_url);
+              
+              if (existingRelease.status === 200) {
+                console.log(`Release with tag '${current_tag}' already exists. Skipping release creation.`);
+              } else {
+                await github.rest.repos.createRelease({
                 draft: false,
                 generate_release_notes: true,
                 name: current_tag,
@@ -89,6 +95,8 @@ jobs:
                 repo: context.repo.repo,
                 tag_name: current_tag,
               });
+                console.log(`Release with tag '${current_tag}' created successfully.`);
+              }
             } catch (error) {
               core.setFailed(error.message);
             }
