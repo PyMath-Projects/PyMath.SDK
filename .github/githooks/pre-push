@@ -1,0 +1,22 @@
+#!/bin/bash
+
+while read local_ref local_sha remote_ref remote_sha
+do
+  reg="^refs/heads/(feature|bugfix|experiment)/[A-Z][a-z0-9]+(-[a-z0-9]+)*$|^refs/heads/(main|develop)$"
+  # Check if the branch being pushed matches the desired format
+  if [[ "$local_ref" =~  $reg ]] || [[ "$remote_ref" =~  $reg ]]; then
+  	exit 0
+  else
+    echo "Error: Local or remote branch name must be one of the following conventions: 
+    feature/*,
+    bugfix/*, 
+    experiment/*, 
+    main, 
+    develop.
+    The * can be any string that respects the following regular expression: [A-Z][a-z0-9]+(-[a-z0-9]+)*$
+    "
+    exit 1
+  fi
+done
+
+exit 0

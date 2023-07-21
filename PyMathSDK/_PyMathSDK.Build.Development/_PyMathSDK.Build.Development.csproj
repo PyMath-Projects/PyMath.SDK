@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>_PyMathSDK.Build.Development</RootNamespace>
+    </PropertyGroup>
+
+    <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
+        <ItemGroup>
+            <_CustomFiles Include="./../../.github/githooks/commit-msg" />
+            <_CustomFiles Include="./../../.github/githooks/pre-push" />
+        </ItemGroup>
+        <Copy SourceFiles="@(_CustomFiles)" DestinationFolder="./../../.git/hooks" />
+        <!-- Set the executable flag for the file on Unix systems -->
+        <Exec Condition="'$(OS)' == 'Unix'" Command="chmod +x './../../.git/hooks/commit-msg'" />
+        <Exec Condition="'$(OS)' == 'Unix'" Command="chmod +x './../../.git/hooks/pre-push'" />
+    </Target>
+
+</Project>
