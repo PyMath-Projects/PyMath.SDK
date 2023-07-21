@@ -38,7 +38,7 @@ jobs:
         run: dotnet tool install --global Versionize
 
       - name: "Setup Source Control"
-        if: steps.version_package_release.outcome == 'success'
+        if: github.event_name == 'pull_request'
         run: |
           git config --local user.email "mduduzi.mlilo@hotmail.com"
           git config --local user.name "Mduduzi Mlilo"
