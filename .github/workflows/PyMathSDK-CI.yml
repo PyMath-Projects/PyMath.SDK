@@ -37,6 +37,12 @@ jobs:
         if: github.event_name == 'pull_request'
         run: dotnet tool install --global Versionize
 
+      - name: "Setup Source Control"
+        if: steps.version_package_release.outcome == 'success'
+        run: |
+          git config --local user.email "mduduzi.mlilo@hotmail.com"
+          git config --local user.name "Mduduzi Mlilo"
+          
       - name: "Version Release"
         id: version_package_release
         run: |
@@ -54,12 +60,6 @@ jobs:
       - name: "No Release Required"
         if: steps.version_package_release.outcome != 'success'
         run: echo "Skipping Release. No release required."
-
-      - name: "Setup Source Control"
-        if: steps.version_package_release.outcome == 'success'
-        run: |
-          git config --local user.email "mduduzi.mlilo@hotmail.com"
-          git config --local user.name "Mduduzi Mlilo"
           
       - name: "Push Versioning Changes"
         if: steps.version_package_release.outcome == 'success'
