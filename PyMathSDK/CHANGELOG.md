@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.0-alpha.0"></a>
+## [0.1.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.1.0-alpha.0) (2023-7-21)
+
+### Features
+
+* Add country enum. ([49958d4](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/49958d469dea57767fee302c731e2e07bc77e998))
+
+### Other
+
+* Merge 49958d469dea57767fee302c731e2e07bc77e998 into c0abea68c60eef43b0e15eace6a926af09c73f32 ([130c264](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/130c264211bbb797149b98fd7784f4e5eb98d04e))
+
 <a name="0.0.1"></a>
 ## [0.0.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.0.1) (2023-7-21)
 
