@@ -3,6 +3,9 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace Enumerations;
 
+/// <summary>
+/// This is a country enum.
+/// </summary>
 [SuppressMessage("ReSharper", "InconsistentNaming")]
 public enum Country
 {
