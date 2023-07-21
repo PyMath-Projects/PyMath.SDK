@@ -81,9 +81,9 @@ jobs:
               const current_tag = result.data[0].name;
               
               const releases_url = context.payload.repository.releases_url.replace("{/id}", `/tags/${current_tag}`);
-              const existingRelease = await github.request(releases_url);
+              const existing_release = await github.request(releases_url);
               
-              if (existingRelease.status === 200) {
+              if (existing_release.status === 200) {
                 console.log(`Release with tag '${current_tag}' already exists. Skipping release creation.`);
               } else {
                 await github.rest.repos.createRelease({
