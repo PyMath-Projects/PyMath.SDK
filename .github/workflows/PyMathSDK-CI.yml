@@ -17,7 +17,8 @@ jobs:
         working-directory: ${{env.WORKING_DIR}}
 
     steps:
-      - uses: actions/checkout@v3
+      - name: "Checkout Branch"
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
@@ -36,12 +37,6 @@ jobs:
         if: github.event_name == 'pull_request'
         run: dotnet tool install --global Versionize
 
-      - name: "Setup Git"
-        if: github.event_name == 'pull_request'
-        run: |
-          git config --local user.email "mduduzi.mlilo@hotmail.com"
-          git config --local user.name "Mduduzi Mlilo"
-
       - name: "Version Release"
         id: version_package_release
         run: |
@@ -55,12 +50,18 @@ jobs:
             exit 1
           fi
         continue-on-error: true
-        
+      
       - name: "No Release Required"
         if: steps.version_package_release.outcome != 'success'
         run: echo "Skipping Release. No release required."
 
-      - name: "Source Control Release Output"
+      - name: "Setup Source Control"
+        if: steps.version_package_release.outcome == 'success'
+        run: |
+          git config --local user.email "mduduzi.mlilo@hotmail.com"
+          git config --local user.name "Mduduzi Mlilo"
+          
+      - name: "Push Versioning Changes"
         if: steps.version_package_release.outcome == 'success'
         uses: ad-m/github-push-action@master
         with:
