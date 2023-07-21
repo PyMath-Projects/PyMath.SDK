@@ -12,7 +12,7 @@ public enum Country
     [Description("Afghanistan")]
     AF = 1,
 
-    [Description("Åland Islands")]
+    [Description("Aland Islands")]
     AX = 2,
 
     [Description("Albania")]
