@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.0-alpha.1"></a>
+## [0.1.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.1.0-alpha.1) (2023-7-21)
+
+### Bug Fixes
+
+* More issues coming up with the refactor. Why don't we have tests for this, haha. ([6f3695a](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/6f3695a4c25299e4e599abddfe6735af377ff1d6))
+* Seems the syntax was completely wrong. ([6315589](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/631558981af36bb28a33b1e5063c2965eaf07007))
+* Still being affected by that reactor. ([2f69381](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/2f69381bf69650ef2fcf167feb4f0f673c7cce52))
+* That's why this was before versioning. A test would have caught that refactor. ([ddcfce6](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ddcfce6c33b50dd5240b0f94dbae795238982ac9))
+* We need to exit with a non zero status if no version release condition is met. ([44ef64d](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/44ef64d7efb119d84b76a335686b053bad1bdc3a))
+
+### Other
+
+* Merge 2f69381bf69650ef2fcf167feb4f0f673c7cce52 into eaa83864267c1c22b25e8bf53b2341e3fa1675eb ([1331eaa](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/1331eaa6a63d0b235008661bffb4db06011fc3cd))
+* Maybe versioning a release can be a single step. ([419dc5a](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/419dc5aa4bc0b7c73f5e502eb7abb53cf9cde4b4))
+* More changes to the CI structure. ([d2f07ab](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d2f07ab9a021bc3a96c7323a64f201ed31ace6a0))
+* Remove special character in country descriptions. ([93ca862](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/93ca8625145fa0992bcf89861e36b1bea2e005c3))
+
 <a name="0.1.0-alpha.0"></a>
 ## [0.1.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.1.0-alpha.0) (2023-7-21)
 
