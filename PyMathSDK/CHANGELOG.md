@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.1.0-alpha.2"></a>
+## [0.1.0-alpha.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.1.0-alpha.2) (2023-7-21)
+
+### Features
+
+* Currency just seems to be the next enum to add. ([7240258](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/7240258fd6c89dea11ee9dfa8a4c853b1217e86a))
+
+### Bug Fixes
+
+* Fix merge conflicts. I hope this only comes when there was an error in process. ([7182ca8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/7182ca8b06a81b907d21890d3da595ab25636584))
+
+### Other
+
+* Merge 7240258fd6c89dea11ee9dfa8a4c853b1217e86a into 7182ca8b06a81b907d21890d3da595ab25636584 ([c7c2f18](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/c7c2f1856f61be6bdc717e1e722756b1a7f72311))
+* Merge eaa83864267c1c22b25e8bf53b2341e3fa1675eb into 6d2afe6a58f3b185a59b338d22b4c4fee5296fa1 ([07aed8d](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/07aed8d2f3787131cf676db846e73667872dd8c2))
+* **release:** 0.1.0 ([8ab5259](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8ab5259ac31fc0cd2f23f09f41791b46e63d2532))
+
 <a name="0.1.0-alpha.1"></a>
 ## [0.1.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.1.0-alpha.1) (2023-7-21)
 
