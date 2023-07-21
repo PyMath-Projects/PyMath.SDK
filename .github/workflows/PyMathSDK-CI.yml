@@ -50,6 +50,9 @@ jobs:
           
           elif [ "${{ github.event_name }}" == "pull_request" ] && [ {{ "github.base_ref" }} == "main" ]; then
             versionize --changelog-all --exit-insignificant-commits --aggregate-pre-releases
+          
+          else
+            exit 1
           fi
         continue-on-error: true
         
