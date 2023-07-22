@@ -61,7 +61,6 @@ jobs:
         continue-on-error: true
 
       - name: "Package PyMathSDK"
-        id: version_package_release
         run: | 
           current_version=$(versionize inspect)
           dotnet pack --configuration Release -p:PackageVersion=$current_version
@@ -108,7 +107,6 @@ jobs:
 
 
       - name: "Push PyMathSDK Package"
-        id: version_package_release
         run: | 
           dotnet nuget push *.nupkg --skip-duplicate
         continue-on-error: false
