@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.4.0-alpha.1"></a>
+## [0.4.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.4.0-alpha.1) (2023-7-22)
+
+### Features
+
+* add NUGET_DIR ([d909d74](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d909d7438d7a46a5e68cf052e8ec8995bfcdd67b))
+
+### Other
+
+* Merge d909d7438d7a46a5e68cf052e8ec8995bfcdd67b into 91ff891d198c19fa2735b554d5b165dd31dd5e7a ([d091b01](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d091b01eb1cdf128e792f961477ec36150f829bc))
+
 <a name="0.4.0-alpha.0"></a>
 ## [0.4.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.4.0-alpha.0) (2023-7-22)
 
