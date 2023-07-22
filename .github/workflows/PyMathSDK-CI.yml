@@ -6,12 +6,17 @@ on:
   pull_request:
     branches: [ "develop", "main" ]
 
+defaults:
+  run:
+    shell: pwsh
+    
 jobs:
   build:
 
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: ./PyMathSDK
+      NUGET_DIR: ${{ github.workspace}}/nuget
     defaults:
       run:
         working-directory: ${{env.WORKING_DIR}}
@@ -64,7 +69,7 @@ jobs:
         if: steps.version_package_release.outcome == 'success'
         run: | 
           current_version=$(versionize inspect)
-          dotnet pack --configuration Release -p:PackageVersion=$current_version
+          dotnet pack --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
         continue-on-error: false
       
       - name: "No Release Required"
@@ -110,7 +115,7 @@ jobs:
       - name: "Push PyMathSDK Package"
         if: steps.version_package_release.outcome == 'success'
         run: |
-          foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
+          foreach($file in (Get-ChildItem "${{ env.NUGET_DIR }}" -Recurse -Include *.nupkg)) {
               dotnet nuget push $file --skip-duplicate
           }
           
