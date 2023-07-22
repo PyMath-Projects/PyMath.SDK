@@ -4,7 +4,8 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-        <Version>0.5.0</Version>
+        <IsPackable>false</IsPackable>
+        <Version>0.5.1-alpha.1</Version>
     </PropertyGroup>
 
 </Project>
