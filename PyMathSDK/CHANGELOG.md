@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.4.0-alpha.2"></a>
+## [0.4.0-alpha.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.4.0-alpha.2) (2023-7-22)
+
+### Features
+
+* update Push PyMathSDK Package step ([d4ee960](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d4ee960734b972baaa682d3e47b7d9405afe2a9f))
+
+### Other
+
+* Merge d4ee960734b972baaa682d3e47b7d9405afe2a9f into eb6ef1e5e449d3956d299d33cf84d7aa4b6e715b ([18c7ef4](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/18c7ef4699bbe5424c822a2f80e03d97874506cd))
+
 <a name="0.4.0-alpha.1"></a>
 ## [0.4.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.4.0-alpha.1) (2023-7-22)
 
