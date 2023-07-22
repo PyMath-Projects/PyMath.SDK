@@ -115,7 +115,7 @@ jobs:
       - name: "Push PyMathSDK Package"
 #        if: steps.version_package_release.outcome == 'success'
         run: |
-          nuget_packages=$(find . -type f -name "*.nupkg")
+          nuget_packages=$(find "${{ env.NUGET_DIR }}" -type f -name "*.nupkg")
           for package in $nuget_packages; do
             dotnet nuget push "$package" -api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate
           done
