@@ -29,7 +29,7 @@ jobs:
           dotnet-version: 7.0.x
           source-url: ${{ env.NUGET_SOURCE_URL }}
         env:
-          NUGET_AUTH_TOKEN: ${{ secret.WORKFLOW_ACTIONS_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
 
       - name: "Restore Dependencies"
         run: dotnet restore
