@@ -109,8 +109,11 @@ jobs:
 
       - name: "Push PyMathSDK Package"
         if: steps.version_package_release.outcome == 'success'
-        run: | 
-          dotnet nuget push *.nupkg --skip-duplicate
+        run: |
+          foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
+              dotnet nuget push $file --skip-duplicate
+          }
+          
         continue-on-error: false
 
         
