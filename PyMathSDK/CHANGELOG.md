@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.0-alpha.2"></a>
+## [0.5.0-alpha.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.0-alpha.2) (2023-7-22)
+
+### Bug Fixes
+
+* Another try. ([6123e26](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/6123e2626fabcbd3f993ad2cc477a76e44e72522))
+
+### Other
+
+* Merge 6123e2626fabcbd3f993ad2cc477a76e44e72522 into 9fe692ee04409d40f50f2e185ba08fa61dfe6596 ([1a45a7a](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/1a45a7a917afdde89fffa2f8557a36b0082fed46))
+
 <a name="0.5.0-alpha.1"></a>
 ## [0.5.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.0-alpha.1) (2023-7-22)
 
