@@ -25,6 +25,17 @@ All notable changes to this project will be documented in this file. See [versio
 * **release:** 0.2.2-alpha.0 ([b0974b8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/b0974b8cfb682ec0c01af2a302ceb0e78d3e33ca))
 * **release:** 0.3.0-alpha.0 ([6c47e8c](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/6c47e8c1a33ff0992b806b2fab48f348d1dc622b))
 
+<a name="0.3.0-alpha.1"></a>
+## [0.3.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.3.0-alpha.1) (2023-7-22)
+
+### Features
+
+* loop through all the nupkg files and push ([dbde152](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/dbde152ae91a2d9390c4089223e9bf27f9dc0fd8))
+
+### Other
+
+* Merge dbde152ae91a2d9390c4089223e9bf27f9dc0fd8 into 6c47e8c1a33ff0992b806b2fab48f348d1dc622b ([225120b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/225120b2394173879f5734a7b2f341672f0e236b))
+
 <a name="0.3.0-alpha.0"></a>
 ## [0.3.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.3.0-alpha.0) (2023-7-22)
 
