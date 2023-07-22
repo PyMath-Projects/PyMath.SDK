@@ -2,6 +2,9 @@ using System.ComponentModel;
 
 namespace PyMathSDK.Enums.Currency;
 
+/// <summary>
+/// Add in some documentation.
+/// </summary>
 public enum Currency
 {
     [Description("United Arab Emirates dirham")]
