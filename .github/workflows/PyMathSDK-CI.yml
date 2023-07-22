@@ -5,10 +5,6 @@ on:
     branches: [ "feature/*", "bugfix/*", "experiment/*" ]
   pull_request:
     branches: [ "develop", "main" ]
-
-defaults:
-  run:
-    shell: pwsh
     
 jobs:
   build:
@@ -115,8 +111,8 @@ jobs:
       - name: "Push PyMathSDK Package"
         if: steps.version_package_release.outcome == 'success'
         run: |
-          foreach($file in (Get-ChildItem "${{ env.NUGET_DIR }}" -Recurse -Include *.nupkg)) {
-              dotnet nuget push $file --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate
+          foreach ($file in (Get-ChildItem "${{ env.NUGET_DIR }}" -Recurse -Include *.nupkg)) {
+            pwsh -c "dotnet nuget push $file --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate"
           }
         continue-on-error: false
 
