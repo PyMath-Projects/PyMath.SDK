@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.0-alpha.4"></a>
+## [0.5.0-alpha.4](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.0-alpha.4) (2023-7-22)
+
+### Features
+
+* This may work. At this point I dont have much faith. ([a806532](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/a80653295b5a5b786262dcb5b0b3f33c6dd74515))
+
+### Other
+
+* Merge 8a7e282af4f3bdc50affce4e0dcab2ad7e52dd78 into 669eb96fedba9f30cfc8df0800b62868e5ae8b2e ([f746360](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/f746360a5a6893c824064cdb9568e6f3e8d23889))
+* I forgot to end the loop. ([c743365](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/c7433656acddcbaeac8d865c3e69228c3bd3638e))
+* Maybe that was some finger error. ([e5c6c0f](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/e5c6c0f8de9b6dcfb60263e47828b7580aad66b4))
+* Merge develop. ([8a7e282](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8a7e282af4f3bdc50affce4e0dcab2ad7e52dd78))
+* More changes. ([5ca8bc3](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/5ca8bc3ec339ef6d3501f2e24ad4f9e750c0d1a4))
+* More ci stuff. ([7d8c61b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/7d8c61b574dde5939b2408d0a828e725144ea08d))
+* More fixes. ([e470296](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/e470296e6b03333546509621838f3c0f4269dcc8))
+* Remove some steps for testing. ([33c864c](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/33c864c34a4c3056bb6000f68d2f359f696901b5))
+* Search in nuget directory for packages. ([66327d8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/66327d852076773e8fd4b57812ff636cb9b25404))
+* Seperate variables. ([4c106e6](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/4c106e668db32d70bddc866cf8b3ddbed95c400f))
+* This stuff never ends. ([1337e4d](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/1337e4dfcc61d86a80a82def313ce7934a3550b5))
+* Versionize must be installed. ([40b060e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/40b060ee85b5f1b6799bfc02078135d5afc9b81b))
+
 <a name="0.5.0-alpha.3"></a>
 ## [0.5.0-alpha.3](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.0-alpha.3) (2023-7-22)
 
