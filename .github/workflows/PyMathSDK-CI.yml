@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "develop", "main" ]
     
+defaults:
+  run:
+    shell: pwsh
+    
 jobs:
   build:
 
@@ -47,72 +51,72 @@ jobs:
           git config --local user.email "mduduzi.mlilo@hotmail.com"
           git config --local user.name "Mduduzi Mlilo"
           
-      - name: "Version Release"
-        id: version_package_release
-        run: |
-          if [ "${{ github.event_name }}" == "pull_request" ] && [ "${{ github.base_ref }}" == "develop" ]; then
-            versionize --changelog-all --exit-insignificant-commits --pre-release alpha
-          
-          elif [ "${{ github.event_name }}" == "pull_request" ] && [ "${{ github.base_ref }}" == "main" ]; then
-            versionize --changelog-all --exit-insignificant-commits --aggregate-pre-releases
-          
-          else
-            exit 1
-          fi
-        continue-on-error: true
+#      - name: "Version Release"
+#        id: version_package_release
+#        run: |
+#          if [ "${{ github.event_name }}" == "pull_request" ] && [ "${{ github.base_ref }}" == "develop" ]; then
+#            versionize --changelog-all --exit-insignificant-commits --pre-release alpha
+#          
+#          elif [ "${{ github.event_name }}" == "pull_request" ] && [ "${{ github.base_ref }}" == "main" ]; then
+#            versionize --changelog-all --exit-insignificant-commits --aggregate-pre-releases
+#          
+#          else
+#            exit 1
+#          fi
+#        continue-on-error: true
 
       - name: "Package PyMathSDK"
-        if: steps.version_package_release.outcome == 'success'
+#        if: steps.version_package_release.outcome == 'success'
         run: | 
           current_version=$(versionize inspect)
           dotnet pack --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
         continue-on-error: false
       
-      - name: "No Release Required"
-        if: steps.version_package_release.outcome != 'success'
-        run: echo "Skipping Release. No release required."
+#      - name: "No Release Required"
+#        if: steps.version_package_release.outcome != 'success'
+#        run: echo "Skipping Release. No release required."
           
-      - name: "Push Versioning Changes"
-        if: steps.version_package_release.outcome == 'success'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
-          branch: ${{ github.base_ref }}
-          tags: true
-
-      - name: "Create Release"
-        if: steps.version_package_release.outcome == 'success'
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
-          script: |
-            try {
-              const tags_url = context.payload.repository.tags_url + "?per_page=1";
-              const result = await github.request(tags_url);
-              const current_tag = result.data[0].name;
-        
-              await github.rest.repos.createRelease({
-              draft: false,
-              generate_release_notes: true,
-              name: current_tag,
-              owner: context.repo.owner,
-              prerelease: false,
-              repo: context.repo.repo,
-              tag_name: current_tag,
-            });
-            } catch (error) {
-              core.setFailed(error.message);
-            }
+#      - name: "Push Versioning Changes"
+#        if: steps.version_package_release.outcome == 'success'
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
+#          branch: ${{ github.base_ref }}
+#          tags: true
+#
+#      - name: "Create Release"
+#        if: steps.version_package_release.outcome == 'success'
+#        uses: actions/github-script@v5
+#        with:
+#          github-token: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
+#          script: |
+#            try {
+#              const tags_url = context.payload.repository.tags_url + "?per_page=1";
+#              const result = await github.request(tags_url);
+#              const current_tag = result.data[0].name;
+#        
+#              await github.rest.repos.createRelease({
+#              draft: false,
+#              generate_release_notes: true,
+#              name: current_tag,
+#              owner: context.repo.owner,
+#              prerelease: false,
+#              repo: context.repo.repo,
+#              tag_name: current_tag,
+#            });
+#            } catch (error) {
+#              core.setFailed(error.message);
+#            }
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
 
 
       - name: "Push PyMathSDK Package"
-        if: steps.version_package_release.outcome == 'success'
+#        if: steps.version_package_release.outcome == 'success'
         run: |
           foreach ($file in (Get-ChildItem "${{ env.NUGET_DIR }}" -Recurse -Include *.nupkg)) {
-            pwsh -c "dotnet nuget push $file --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate"
+            dotnet nuget push $file --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate
           }
         continue-on-error: false
 
