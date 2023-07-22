@@ -8,14 +8,14 @@ on:
     
 jobs:
   build:
-
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: ./PyMathSDK
       NUGET_DIR: ${{ github.workspace }}/nuget
+      NUGET_SOURCE_URL: https://nuget.pkg.github.com/PyMath-Projects/index.json
     defaults:
       run:
-        working-directory: ${{env.WORKING_DIR}}
+        working-directory: ${{ env.WORKING_DIR }}
 
     steps:
       - name: "Checkout Branch"
@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
-          source-url: https://nuget.pkg.github.com/PyMath-Projects/index.json
+          source-url: ${{ env.NUGET_SOURCE_URL }}
         env:
           NUGET_AUTH_TOKEN: ${{ secrets.WORKFLOW_ACTIONS_TOKEN }}
 
@@ -37,6 +37,9 @@ jobs:
       - name: "Build"
         run: dotnet build --no-restore
 
+      - name: "Automated Tests"
+        run: dotnet test --no-build --verbosity normal
+        
       - name: "Install Versioning Tool"
         if: github.event_name == 'pull_request'
         run: dotnet tool install --global Versionize
@@ -96,9 +99,6 @@ jobs:
             } catch (error) {
               core.setFailed(error.message);
             }
-
-      - name: "Automated Tests"
-        run: dotnet test --no-build --verbosity normal
         
       - name: "Release PyMathSDK Package"
         if: steps.version_package_release.outcome == 'success'
@@ -110,8 +110,5 @@ jobs:
           nuget_packages=$(find "${{ env.NUGET_DIR }}" -type f -name "*.nupkg")
           
           for package in $nuget_packages; do
-            dotnet nuget push "$package" --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source https://nuget.pkg.github.com/PyMath-Projects/index.json --skip-duplicate
+            dotnet nuget push "$package" --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source "${{ env.NUGET_SOURCE_URL }}" --skip-duplicate
           done
-        continue-on-error: false
-
-        
