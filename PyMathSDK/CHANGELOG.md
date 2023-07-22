@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.4.0-alpha.0"></a>
+## [0.4.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.4.0-alpha.0) (2023-7-22)
+
+### Features
+
+* Add in some documentation. ([91c77bb](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/91c77bb72f3ba7e363b699af265505dd69552cda))
+
+### Other
+
+* Merge 91c77bb72f3ba7e363b699af265505dd69552cda into 91710af17a1af43f3575e217f035ff4ffd5687ee ([3019750](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/3019750dde9505b2ec5bb25c8b4382ea2919650c))
+* Merge branch 'develop' into main ([8dfd438](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8dfd4383a3161b8b889fb7a1248f887f3eaabb5e))
+* Merge dbde152ae91a2d9390c4089223e9bf27f9dc0fd8 into 6c47e8c1a33ff0992b806b2fab48f348d1dc622b ([225120b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/225120b2394173879f5734a7b2f341672f0e236b))
+* Merge pull request #18 from PyMath-Projects/main ([91710af](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/91710af17a1af43f3575e217f035ff4ffd5687ee))
+* **release:** 0.3.0-alpha.1 ([60da46c](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/60da46c528e16f87bfa96bb222f80f82e706c68f))
+
 <a name="0.3.0"></a>
 ## [0.3.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.3.0) (2023-7-22)
 
