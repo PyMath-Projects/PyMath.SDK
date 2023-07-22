@@ -97,7 +97,7 @@ jobs:
               core.setFailed(error.message);
             }
 
-      - name: Test
+      - name: "Automated Tests"
         run: dotnet test --no-build --verbosity normal
         
       - name: "Release PyMathSDK Package"
