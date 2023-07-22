@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.1-alpha.0"></a>
+## [0.5.1-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.1-alpha.0) (2023-7-22)
+
+### Bug Fixes
+
+* Introduce some structure and clean up a bit. ([4701e0e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/4701e0e3453f4d187f8a3ce3b01f3c685ecf2aab))
+* Oooops, missed this one out. ([959e7e4](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/959e7e4d4ea0132d4588fa83fc43693f3f162717))
+* That secret seems to be invalid. ([428dc63](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/428dc63e66b41089e37196c73c7917eca91aaaa6))
+
+### Other
+
+* Merge 428dc63e66b41089e37196c73c7917eca91aaaa6 into 40631db9772ca4707f7712c12ea9a94ac6af666a ([7e67507](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/7e675076cdab39d7669c96b4028c923d77cde28d))
+* Apparently that was an invalid file. ([ed816d1](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ed816d14bb4e40a6b677f0a125f669f259b0993c))
+* Remove extra changelog. ([0f7c45f](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/0f7c45f7b0d9e9364bcb300ed2d4b005842508de))
+* Remove secret from env variables. ([d3c22f9](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d3c22f983fd6f374366e7f1106cfb6976b2d1f41))
+* Remove some redundant code. ([fe7296a](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/fe7296a7d0308f7d954a9ed3b7ca7741b2bfeefc))
+* Some small refactor. ([40631db](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/40631db9772ca4707f7712c12ea9a94ac6af666a))
+* Token is from secrets. ([46fe2bf](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/46fe2bfb596ec089449a0be5276b48b93a4f3b27))
+
 <a name="0.5.0"></a>
 ## [0.5.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.0) (2023-7-22)
 
