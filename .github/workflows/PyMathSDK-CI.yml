@@ -6,12 +6,17 @@ on:
   pull_request:
     branches: [ "develop", "main" ]
 
+defaults:
+  run:
+    shell: pwsh
+    
 jobs:
   build:
 
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: ./PyMathSDK
+      NUGET_DIR: ${{ github.workspace}}/nuget
     defaults:
       run:
         working-directory: ${{env.WORKING_DIR}}
@@ -26,6 +31,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
+          source-url: https://nuget.pkg.github.com/PyMath-Projects/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: "Restore Dependencies"
         run: dotnet restore
@@ -56,6 +64,13 @@ jobs:
             exit 1
           fi
         continue-on-error: true
+
+      - name: "Package PyMathSDK"
+        if: steps.version_package_release.outcome == 'success'
+        run: | 
+          current_version=$(versionize inspect)
+          dotnet pack --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
+        continue-on-error: false
       
       - name: "No Release Required"
         if: steps.version_package_release.outcome != 'success'
@@ -95,3 +110,15 @@ jobs:
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
+
+
+      - name: "Push PyMathSDK Package"
+        if: steps.version_package_release.outcome == 'success'
+        run: |
+          foreach($file in (Get-ChildItem "${{ env.NUGET_DIR }}" -Recurse -Include *.nupkg)) {
+              dotnet nuget push $file --skip-duplicate
+          }
+          
+        continue-on-error: false
+
+        
