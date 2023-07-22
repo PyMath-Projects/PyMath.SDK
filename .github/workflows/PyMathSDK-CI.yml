@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: 7.0.x
+          source-url: https://nuget.pkg.github.com/xxx/index.json
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: "Restore Dependencies"
         run: dotnet restore
@@ -56,6 +59,13 @@ jobs:
             exit 1
           fi
         continue-on-error: true
+
+      - name: "Package PyMathSDK"
+        id: version_package_release
+        run: | 
+          current_version=$(versionize inspect)
+          dotnet pack --configuration Release -p:PackageVersion=$current_version
+        continue-on-error: false
       
       - name: "No Release Required"
         if: steps.version_package_release.outcome != 'success'
@@ -95,3 +105,12 @@ jobs:
 
       - name: Test
         run: dotnet test --no-build --verbosity normal
+
+
+      - name: "Push PyMathSDK Package"
+        id: version_package_release
+        run: | 
+          dotnet nuget push *.nupkg --skip-duplicate
+        continue-on-error: false
+
+        
