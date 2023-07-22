@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.3.0-alpha.0"></a>
+## [0.3.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.3.0-alpha.0) (2023-7-22)
+
+### Features
+
+* add source-url ([6125744](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/6125744389477e34a8002f363f4f3c0887e5cdc8))
+* package generation and hosting ([5be5817](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/5be58174134fef7e31eafadeac94c79b2589ca09))
+* removed duplicate id ([d001fd9](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d001fd90260c8e55146497e057989e0291b01898))
+* run if step outcome is a success ([042b0bd](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/042b0bd173623475b02c6b90055b76b07396ac44))
+
+### Other
+
+* Merge 042b0bd173623475b02c6b90055b76b07396ac44 into b0974b8cfb682ec0c01af2a302ceb0e78d3e33ca ([9e7c0f7](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/9e7c0f77d7336e6b3c3c7bcd94c82a4e194a1976))
+
+<a name="0.2.2-alpha.0"></a>
+## [0.2.2-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.2.2-alpha.0) (2023-7-22)
+
+### Bug Fixes
+
+* Have a separate build release to keep track of the release version. ([74f39e3](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/74f39e3016de99b59ea2f59b147d65ed5f8af126))
+
+### Other
+
+* Merge 74f39e3016de99b59ea2f59b147d65ed5f8af126 into d7fa056c303b1ac63a64b40cc6299c6b1580d3f1 ([97d2500](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/97d2500b809938203a9cb16b67f5ea6b5616ade3))
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.2.1) (2023-7-21)
 
