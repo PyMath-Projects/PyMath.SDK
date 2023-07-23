@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.2"></a>
+## [0.5.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2) (2023-7-23)
+
+### Bug Fixes
+
+* All enums should be ini the same space. ([ab49412](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ab494125767d74c48d0463ae9667b1b190cb5421))
+* Moved more things around. We are still testing here, hence fix. ([5de132b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/5de132b3d98d4d148eb3183449c6f05e04539bf6))
+* **Enums:** Add more enumerations ([68bf370](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/68bf370ef9c326cb000184769f4d249e67a19f62))
+
+### Other
+
+* Merge 12bdcfb4d0e5057aa327f27be753dcf2a550c2b1 into d9d531bfdcea50d4ffcfcf2e8b3cb8f5c8bc9070 ([3a6d501](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/3a6d5010b06a5fcd0506343ac0a4fbe029687698))
+* Merge 5de132b3d98d4d148eb3183449c6f05e04539bf6 into 342d75e9b7ab6541a0a41b127a242b315e1a3e05 ([d988ae5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d988ae59191fe3d6d935392646b9921226f3f809))
+* Merge 68bf370ef9c326cb000184769f4d249e67a19f62 into 263f19de3c37088e54a4b9b686036e191d520b48 ([266ba9b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/266ba9b48ed51cfc19f67d290803a68cd7ae5e1f))
+* Merge ab494125767d74c48d0463ae9667b1b190cb5421 into 34434440a8363f12f98f7aedb5011ca589e7e7d3 ([dd8fba8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/dd8fba84155558a7f8c7e73a4948fe92f9d66e40))
+* Merge pull request #39 from PyMath-Projects/feature/Add-all-enums-to-one-project ([12bdcfb](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/12bdcfb4d0e5057aa327f27be753dcf2a550c2b1))
+* Add in a copyright while at it. ([17af672](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/17af672e819b7014985336fef8c050a51146d16f))
+* Add in some metadat. ([4778437](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/477843766dcff4caebc8508869c851396adb7231))
+* Moving files around. ([ae3c3c8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ae3c3c86490b8cb2d4c91b29446aeae19e70dc2b))
+* Some more moving files around. Trying to get a folder structure. ([3443444](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/34434440a8363f12f98f7aedb5011ca589e7e7d3))
+* Sync with develop. ([d2f8684](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d2f8684dbbf300321e266c07966d5f013434ce02))
+* Turns out those underlines were a bad idea. ([bf8ad19](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/bf8ad1919b9bad34f2d80cce5ebcbf7ea2e0f2d1))
+* **Docs:** Readme had to move. ([4f0f5ab](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/4f0f5abcad88d2e62a8957c0f8e0f09eec92bf8a))
+* **Docs:** Readme is still generic and lacking but we'll improve it. ([e6e89e9](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/e6e89e9a0aff0ff495e61608995606fdc8e4034a))
+* **release:** 0.5.2-alpha.0 ([342d75e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/342d75e9b7ab6541a0a41b127a242b315e1a3e05))
+* **release:** 0.5.2-alpha.1 ([263f19d](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/263f19de3c37088e54a4b9b686036e191d520b48))
+* **release:** 0.5.2-alpha.2 ([bb74e1b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/bb74e1bb07609f8d2f3b30bb8fcc51b3c6c96a0b))
+
 <a name="0.5.2-alpha.2"></a>
 ## [0.5.2-alpha.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2-alpha.2) (2023-7-23)
 
