@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.2-alpha.2"></a>
+## [0.5.2-alpha.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2-alpha.2) (2023-7-23)
+
+### Bug Fixes
+
+* **Enums:** Add more enumerations ([68bf370](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/68bf370ef9c326cb000184769f4d249e67a19f62))
+
+### Other
+
+* Merge 68bf370ef9c326cb000184769f4d249e67a19f62 into 263f19de3c37088e54a4b9b686036e191d520b48 ([266ba9b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/266ba9b48ed51cfc19f67d290803a68cd7ae5e1f))
+
+<a name="0.5.2-alpha.1"></a>
+## [0.5.2-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2-alpha.1) (2023-7-23)
+
+### Bug Fixes
+
+* Moved more things around. We are still testing here, hence fix. ([5de132b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/5de132b3d98d4d148eb3183449c6f05e04539bf6))
+
+### Other
+
+* Merge 5de132b3d98d4d148eb3183449c6f05e04539bf6 into 342d75e9b7ab6541a0a41b127a242b315e1a3e05 ([d988ae5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d988ae59191fe3d6d935392646b9921226f3f809))
+
+<a name="0.5.2-alpha.0"></a>
+## [0.5.2-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2-alpha.0) (2023-7-23)
+
+### Bug Fixes
+
+* All enums should be ini the same space. ([ab49412](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ab494125767d74c48d0463ae9667b1b190cb5421))
+
+### Other
+
+* Merge ab494125767d74c48d0463ae9667b1b190cb5421 into 34434440a8363f12f98f7aedb5011ca589e7e7d3 ([dd8fba8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/dd8fba84155558a7f8c7e73a4948fe92f9d66e40))
+* Moving files around. ([ae3c3c8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ae3c3c86490b8cb2d4c91b29446aeae19e70dc2b))
+* Some more moving files around. Trying to get a folder structure. ([3443444](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/34434440a8363f12f98f7aedb5011ca589e7e7d3))
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.1) (2023-7-22)
 

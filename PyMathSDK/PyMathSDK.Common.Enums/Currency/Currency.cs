@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace PyMathSDK.Enums.Currency;
+namespace PyMathSDK.Common.Enums.Currency;
 
 /// <summary>
 /// Add in some documentation.

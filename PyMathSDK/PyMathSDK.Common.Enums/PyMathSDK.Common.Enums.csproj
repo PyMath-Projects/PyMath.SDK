@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Authors>PyMath-Projects</Authors>
+        <Description>
+            These are common enums that are applicable to most software developed by PyMath-Projects.
+        </Description>
+        
+        <PackageProjectUrl>https://github.com/PyMath-Projects/PyMath.SDK</PackageProjectUrl>
+        <PackageTags>PyMath Enums, Enumeration, PyMath, PyMath Common</PackageTags>
+    </PropertyGroup>
+
+</Project>
