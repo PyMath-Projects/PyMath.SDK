@@ -1,7 +1,7 @@
 using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
 
-namespace Enumerations;
+namespace PyMathSDK.Common.Enums.Country;
 
 /// <summary>
 /// This is a country enum.
