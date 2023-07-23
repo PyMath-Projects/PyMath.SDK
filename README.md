@@ -3,8 +3,6 @@
 
 ## Overview
 
------------
-
 PyMathSDK is a versatile NuGet package that provides a generic-purpose SDK for organizations to handle common objects
 and enums. It offers a set of tools and utilities to streamline the management of various objects and enums that an 
 organization might require. This SDK aims to simplify development and improve productivity by providing reusable 
@@ -12,14 +10,10 @@ components.
 
 ## Installation
 
----------------
-
 You can install PyMathSDK using NuGet Package Manager in Rider or by using the .NET CLI. 
 Here's how you can do it in Rider:
 
 ### NuGet Package Manager (JetBrains Rider)
-
--------------------------------------------
 
 1. Open your project in Rider.
 2. Find the "Show Nuget Tool Window' command. You can press shift twice and search for it from the pop up window.
@@ -64,8 +58,6 @@ EmployeeStatus status = EmployeeStatus.Active;
 
 ### Common Objects
 
-------------------
-
 The common objects provided by PyMathSDK are designed to be simple and extensible. 
 You can use these objects in your project by instantiating them with the necessary data:
 
@@ -90,22 +82,16 @@ Employee employee = new Employee
 
 ## Contributing
 
----------------
-
 We welcome contributions to enhance the functionality and usability of PyMathSDK. 
 If you have found a bug, have suggestions, or want to contribute in any way, please follow our [contribution guidelines](https://example.com/pymathsdk/contributing).
 
 ## License
-
-----------
 
 PyMathSDK is licensed under our organization's internal licensing agreement. 
 It is intended solely for private use within our organization and may not be distributed or used outside our 
 organization without proper authorization.
 
 ## Support
-
-----------
 
 If you encounter any issues or have questions related to PyMathSDK, please reach out to our support team or contact 
 the designated maintainers within our organization. We are here to assist you with any challenges or inquiries you may 
