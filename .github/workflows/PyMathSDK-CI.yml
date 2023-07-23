@@ -1,4 +1,4 @@
-name: PyMathSDK-CI
+name: "PyMathSDK-CI"
 
 on:
   push:
