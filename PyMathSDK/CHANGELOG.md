@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.5.2-alpha.0"></a>
+## [0.5.2-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2-alpha.0) (2023-7-23)
+
+### Bug Fixes
+
+* All enums should be ini the same space. ([ab49412](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ab494125767d74c48d0463ae9667b1b190cb5421))
+
+### Other
+
+* Merge ab494125767d74c48d0463ae9667b1b190cb5421 into 34434440a8363f12f98f7aedb5011ca589e7e7d3 ([dd8fba8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/dd8fba84155558a7f8c7e73a4948fe92f9d66e40))
+* Moving files around. ([ae3c3c8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/ae3c3c86490b8cb2d4c91b29446aeae19e70dc2b))
+* Some more moving files around. Trying to get a folder structure. ([3443444](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/34434440a8363f12f98f7aedb5011ca589e7e7d3))
+
 <a name="0.5.1"></a>
 ## [0.5.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.1) (2023-7-22)
 
