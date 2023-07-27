@@ -2,7 +2,7 @@ using Confluent.Kafka;
 
 namespace PyMathSDK.Common.Kafka.Producer;
 
-public interface IBrokerProducer
+public interface IBrokerProducer : IDisposable
 {
-    Task<DeliveryResult<Null, string>> Produce(string topic, string message);
+    Task<DeliveryResult<Null, string>?> ProduceAsync(string topic, string message);
 }
