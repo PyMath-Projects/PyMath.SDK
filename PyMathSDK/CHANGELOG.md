@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.0-alpha.0"></a>
+## [0.6.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.6.0-alpha.0) (2023-7-27)
+
+### Features
+
+* **Kafka:** Add kafka consumer, group and retry. ([00bc7b5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/00bc7b59adbe7aef727f91e0356962799b40e1b8))
+* **Kafka:** Giving this kafka production a stab. ([8584d8e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8584d8e84db555c3eb6bb255601248fd7adca9b4))
+
+### Other
+
+* Merge 8584d8e84db555c3eb6bb255601248fd7adca9b4 into ff7402f2f2edbad89f8a41f7d8e0f09e5f54e7f2 ([60d4328](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/60d43280a7368b6e874e7a66094c5db92beb1c2e))
+* **Build:** Remove build projects when building the solution. ([4188dd5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/4188dd55c9cfbdce327462c540d1823ca55cd3c3))
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.5.2) (2023-7-23)
 
