@@ -10,4 +10,8 @@
         <PackageReference Include="Confluent.Kafka" Version="2.2.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+        <Folder Include="QueConfiguration\"/>
+    </ItemGroup>
+
 </Project>

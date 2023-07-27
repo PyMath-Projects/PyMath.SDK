@@ -8,6 +8,8 @@
         <RootNamespace>_PyMathSDK.Build.Development</RootNamespace>
     </PropertyGroup>
 
+    <Import Project="./../PyMathSDK.sln"/>
+
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
         <ItemGroup>
             <_CustomFiles Include="./../../.github/githooks/commit-msg" />
