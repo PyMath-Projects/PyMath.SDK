@@ -1,10 +1,9 @@
-﻿using MassTransit;
-using System.Transactions;
+﻿using System.Transactions;
+using MassTransit;
 using Microsoft.Extensions.DependencyInjection;
 using PyMathSDK.Common.MassTransit.Eventing.EventBus;
-using PyMathSDK.Common.MassTransit.Eventing.Messaging;
 
-namespace PyMathSDK.Common.MassTransit.Eventing;
+namespace PyMathSDK.Common.MassTransit.Messaging;
 
 public class WrapperConsumer<THandler, TMessage> : IConsumer<TMessage>
     where TMessage : class

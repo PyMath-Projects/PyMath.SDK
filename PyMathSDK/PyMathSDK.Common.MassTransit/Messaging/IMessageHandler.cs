@@ -1,4 +1,4 @@
-﻿namespace PyMathSDK.Common.MassTransit.Eventing.Messaging;
+﻿namespace PyMathSDK.Common.MassTransit.Messaging;
 
 public interface IMessageHandler<TMessage> where TMessage : class
 {
