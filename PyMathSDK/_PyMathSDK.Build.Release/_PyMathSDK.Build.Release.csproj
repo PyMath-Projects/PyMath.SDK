@@ -8,4 +8,6 @@
         <Version>0.5.2</Version>
     </PropertyGroup>
 
+    <Import Project="./../PyMathSDK.sln" />
+
 </Project>
