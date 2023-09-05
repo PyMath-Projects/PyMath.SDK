@@ -1,6 +1,6 @@
 namespace PyMathSDK.Common.MassTransit.Eventing.EventBus;
 
-public interface IEventBus
+public interface IMassTransitEventBus
 {
     Task Publish<T>(T message) where T : class;
 }

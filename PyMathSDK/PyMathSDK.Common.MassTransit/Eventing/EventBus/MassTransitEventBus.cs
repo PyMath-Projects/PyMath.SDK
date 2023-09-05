@@ -2,13 +2,13 @@
 
 namespace PyMathSDK.Common.MassTransit.Eventing.EventBus;
 
-public class EventBus : IEventBus, IDisposable
+public class MassTransitEventBus : IMassTransitEventBus, IDisposable
 {
     private readonly IPublishEndpoint _publishEndpoint;
     private readonly List<object> _messagesToPublish = new List<object>();
     public IPublishEndpoint Current { get; set; }
 
-    public EventBus(IPublishEndpoint publishEndpoint)
+    public MassTransitEventBus(IPublishEndpoint publishEndpoint)
     {
         _publishEndpoint = publishEndpoint ?? throw new ArgumentNullException(nameof(publishEndpoint));
         Current = _publishEndpoint;

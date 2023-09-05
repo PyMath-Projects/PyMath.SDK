@@ -1,6 +1,7 @@
 ﻿using MassTransit;
 using System.Transactions;
 using Microsoft.Extensions.DependencyInjection;
+using PyMathSDK.Common.MassTransit.Eventing.EventBus;
 using PyMathSDK.Common.MassTransit.Eventing.Messaging;
 
 namespace PyMathSDK.Common.MassTransit.Eventing;
@@ -18,7 +19,7 @@ public class WrapperConsumer<THandler, TMessage> : IConsumer<TMessage>
 
     public async Task Consume(ConsumeContext<TMessage> context)
     {
-        var eventBus = _serviceProvider.GetService<EventBus.EventBus>()!;
+        var eventBus = _serviceProvider.GetService<MassTransitEventBus>()!;
         eventBus.Current = context;
 
         using var transaction = new TransactionScope(TransactionScopeOption.Required,

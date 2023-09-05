@@ -5,8 +5,8 @@ namespace PyMathSDK.Common.MassTransit.Factories;
 
 public class MassTransitFactory
 {
-    public static IEventBus CreateEventBus(IBusControl bus)
+    public static IMassTransitEventBus CreateEventBus(IBusControl bus)
     {
-        return new EventBus(bus);
+        return new MassTransitEventBus(bus);
     }
 }
