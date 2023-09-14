@@ -35,13 +35,13 @@ public class MassTransitConsumer<THandler, TMessage> : IConsumer<TMessage>
     }
 }
 
-public class WrapperConsumerDefinition<THandler, TMessage> : ConsumerDefinition<MassTransitConsumer<THandler, TMessage>>
+public class MassTransitConsumerDefinition<THandler, TMessage> : ConsumerDefinition<MassTransitConsumer<THandler, TMessage>>
     where TMessage : class
     where THandler : IMessageHandler<TMessage>
 {
     private readonly IServiceProvider _serviceProvider;
 
-    public WrapperConsumerDefinition(IServiceProvider serviceProvider)
+    public MassTransitConsumerDefinition(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
     }
