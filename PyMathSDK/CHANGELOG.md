@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.0-alpha.4"></a>
+## [0.6.0-alpha.4](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.6.0-alpha.4) (2023-9-14)
+
+### Bug Fixes
+
+* **CI:** Add more debugging information. ([5bce055](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/5bce0553916368ac6a93e2c0558bc08bb1195c43))
+* **CI:** Fix some echo commands. ([d59d082](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/d59d082b2784c98b6e6600ebb60177972e90e8ac))
+
+### Other
+
+* Merge 83bef58278db48af00e0077283a5b6dfdab75a43 into a98d9c0415275815dbe4d07c0f44fcaaac7701f6 ([14e4c59](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/14e4c591939241b3dd06d562cacdaa3188e6fb05))
+* Merge pull request #46 from PyMath-Projects/feature/MassTransit ([a98d9c0](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/a98d9c0415275815dbe4d07c0f44fcaaac7701f6))
+* Merge develop into Mass Trnasit ([83bef58](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/83bef58278db48af00e0077283a5b6dfdab75a43))
+
 <a name="0.6.0-alpha.3"></a>
 ## [0.6.0-alpha.3](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.6.0-alpha.3) (2023-9-14)
 
