@@ -104,15 +104,14 @@ jobs:
         if: steps.version_package_release.outcome == 'success'
         run: |
           current_version=$(versionize inspect)
-          echo "${{current_version}}"
           
           dotnet pack --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
           
           nuget_packages=$(find "${{ env.NUGET_DIR }}" -type f -name "*.nupkg")
-          echo "${{nuget_packages}}"
+          echo "$nuget_packages"
           
           for package in $nuget_packages; do
-            echo "${{env.NUGET_SOURCE_URL}}"
-            echo "${{package}}"
+            echo "${{ env.NUGET_SOURCE_URL }}"
+            echo "$package"
             dotnet nuget push "$package" --api-key "${{ secrets.WORKFLOW_ACTIONS_TOKEN }}" --source "${{ env.NUGET_SOURCE_URL }}" --skip-duplicate
           done
