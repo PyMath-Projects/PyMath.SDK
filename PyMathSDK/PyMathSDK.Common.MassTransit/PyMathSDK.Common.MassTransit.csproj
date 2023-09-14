@@ -10,5 +10,15 @@
     <ItemGroup>
       <PackageReference Include="MassTransit" Version="8.1.0" />
     </ItemGroup>
+
+    <PropertyGroup>
+        <Authors>PyMath-Projects</Authors>
+        <Description>
+            The Mass Transit related functionality for the distributed software applications developed by PyMath-Projects.
+        </Description>
+
+        <PackageProjectUrl>https://github.com/PyMath-Projects/PyMath.SDK</PackageProjectUrl>
+        <PackageTags>PyMath Messaging, Messaging, Eventing, PyMath, PyMath Common, PyMath Eventing</PackageTags>
+    </PropertyGroup>
     
 </Project>
