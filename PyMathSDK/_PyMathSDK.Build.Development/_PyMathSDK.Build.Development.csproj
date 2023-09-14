@@ -5,10 +5,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
-        <RootNamespace>_PyMathSDK.Build.Development</RootNamespace>
     </PropertyGroup>
 
-    <Import Project="./../PyMathSDK.sln"/>
+    <Import Project="./../PyMathSDK.sln" />
 
     <Target Name="CopyCustomContent" AfterTargets="AfterBuild">
         <ItemGroup>
