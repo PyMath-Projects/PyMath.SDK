@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="0.6.0-alpha.1"></a>
+## [0.6.0-alpha.1](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.6.0-alpha.1) (2023-9-14)
+
+### Features
+
+* **Enumerations:** Add login resolution policy enum. ([c474d17](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/c474d17e6d47d7ad3def97aa9ccad5d42a29f47d))
+
+### Other
+
+* MassTransit ([c0a1ea0](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/c0a1ea01c34bd0b4ffe0007ff9001a89b93a03d0))
+* Merge 01f6c373e8a5897efa82a2eb1e7acd46722ca71a into 1dede52fdaa7d201f278d050849eb244eb056fee ([f04c232](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/f04c2324684f6d962112a8aa2d91a0565d047f73))
+* Merge develop into Mass-transit. ([01f6c37](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/01f6c373e8a5897efa82a2eb1e7acd46722ca71a))
+* Merge main into develop ([1dede52](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/1dede52fdaa7d201f278d050849eb244eb056fee))
+* **Build:** Remove build projects from solution. ([3e38858](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/3e38858f435702f8038f03f777603bed024cb48e))
+* **Build Projects:** Build solution from build projects. ([38ff3f8](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/38ff3f84db86c587173c6a22962787e601d07c6f))
+* **Eventing:** Add mass transit to the correct project. ([bdc149e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/bdc149e0fe542961ac1d79c2ae9b1afa27834573))
+* **Eventing:** Move consumer definition to its own file. ([f16c381](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/f16c381d87937cbedd94b6c2a69c1038ad719d73))
+* **Eventing:** Move things around. ([8267840](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/82678403a6c999ecd3d571d81e2bc085efaaa452))
+* **Eventing:** Refactor eventing message handler. ([8b8f5a5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8b8f5a533029c8db8d01386211f11e100627bb57))
+* **Eventing:** Remove some unnecessary logic. ([a8b157e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/a8b157e96d989d91500bab17bdf32f54374d1bb8))
+* **Eventing:** Rename the mass transit consumer definition to match consumer name. ([8a1aa3e](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/8a1aa3e058265ceed1e52bcd5685b984afc92e63))
+* **Eventing:** Some refactors and modifications to eventing. ([f5ef9e5](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/f5ef9e5ef95f99e6df5789e5c825323eb2223444))
+* **Eventing:** There can be more than one types of bus. Mass transit is just one. ([3bc814b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/3bc814b9ace5e537580091ca9f37c9516f2f2002))
+* **PyMathSDK:** Remove sample projects. ([462e93f](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/462e93fc0942d5c291ad7b58c2cffb12fb5d1f67))
+* **release:** 0.6.0-alpha.0 ([9ffa12b](https://www.github.com/PyMath-Projects/PyMath.SDK/commit/9ffa12b2fc970c52bef4051048d9a72632f2dca1))
+
 <a name="0.6.0-alpha.0"></a>
 ## [0.6.0-alpha.0](https://www.github.com/PyMath-Projects/PyMath.SDK/releases/tag/v0.6.0-alpha.0) (2023-7-27)
 
