@@ -14,10 +14,9 @@ public class MassTransitEventBus : IMassTransitEventBus, IDisposable
         Current = _publishEndpoint;
     }
     
-    public Task Publish<T>(T message) where T : class
+    public void Publish<T>(T message) where T : class
     {
         _messagesToPublish.Add(message);
-        return Task.CompletedTask;
     }
 
     public async Task FlushAllAsync(CancellationToken cancellationToken = default)

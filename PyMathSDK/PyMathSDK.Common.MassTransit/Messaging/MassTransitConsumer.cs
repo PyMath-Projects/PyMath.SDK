@@ -5,17 +5,18 @@ using PyMathSDK.Common.MassTransit.Eventing.EventBus;
 
 namespace PyMathSDK.Common.MassTransit.Messaging;
 
-public class WrapperConsumer<THandler, TMessage> : IConsumer<TMessage>
+public class MassTransitConsumer<THandler, TMessage> : IConsumer<TMessage>
     where TMessage : class
     where THandler : IMessageHandler<TMessage>
 {
     private readonly IServiceProvider _serviceProvider;
 
-    public WrapperConsumer(IServiceProvider serviceProvider)
+    public MassTransitConsumer(IServiceProvider serviceProvider)
     {
         _serviceProvider = serviceProvider;
     }
 
+    // This seems like a good use of the decorator pattern. Maybe, maybe not.
     public async Task Consume(ConsumeContext<TMessage> context)
     {
         var eventBus = _serviceProvider.GetService<MassTransitEventBus>()!;
@@ -34,7 +35,7 @@ public class WrapperConsumer<THandler, TMessage> : IConsumer<TMessage>
     }
 }
 
-public class WrapperConsumerDefinition<THandler, TMessage> : ConsumerDefinition<WrapperConsumer<THandler, TMessage>>
+public class WrapperConsumerDefinition<THandler, TMessage> : ConsumerDefinition<MassTransitConsumer<THandler, TMessage>>
     where TMessage : class
     where THandler : IMessageHandler<TMessage>
 {
@@ -47,7 +48,7 @@ public class WrapperConsumerDefinition<THandler, TMessage> : ConsumerDefinition<
 
     protected override void ConfigureConsumer(
         IReceiveEndpointConfigurator endpointConfigurator,
-        IConsumerConfigurator<WrapperConsumer<THandler, TMessage>> consumerConfigurator)
+        IConsumerConfigurator<MassTransitConsumer<THandler, TMessage>> consumerConfigurator)
     {
     }
 }
