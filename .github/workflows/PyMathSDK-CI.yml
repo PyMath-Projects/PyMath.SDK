@@ -13,6 +13,7 @@ jobs:
       WORKING_DIR: ./PyMathSDK
       NUGET_DIR: ${{ github.workspace }}/nuget
       NUGET_SOURCE_URL: https://nuget.pkg.github.com/PyMath-Projects/index.json
+      DEBUG: true
     defaults:
       run:
         working-directory: ${{ env.WORKING_DIR }}
