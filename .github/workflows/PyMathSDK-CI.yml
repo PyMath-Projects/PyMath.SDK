@@ -105,7 +105,7 @@ jobs:
         run: |
           current_version=$(versionize inspect)
           
-          dotnet pack --no-build $(find . -name '*_PyMathSDK.Build.*.csproj') --no-restore $(find . -name '*_PyMathSDK.Build.*.csproj') --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
+          dotnet pack PyMathSDK.sln --configuration Release -p:PackageVersion=$current_version --output ${{env.NUGET_DIR}}
           
           nuget_packages=$(find "${{ env.NUGET_DIR }}" -type f -name "*.nupkg")
           
