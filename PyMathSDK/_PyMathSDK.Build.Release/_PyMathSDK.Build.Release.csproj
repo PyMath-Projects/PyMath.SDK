@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <IsPackable>false</IsPackable>
-        <Version>0.6.0-alpha.7</Version>
+        <Version>0.6.0-alpha.8</Version>
     </PropertyGroup>
 
     <Import Project="./../PyMathSDK.sln" />
